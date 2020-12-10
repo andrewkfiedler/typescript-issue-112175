@@ -1,0 +1,22 @@
+{
+  "name": "typescript-issue-112175",
+  "author": "andrewkfiedler",
+  "description": "A minimal reproduction of issue https://github.com/microsoft/vscode/issues/112175",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewkfiedler/typescript-issue-112175"
+  },
+  "engines": {
+    "node": ">=0.10.5"
+  },
+  "dependencies": {
+    "typescript": "4.1.2"
+  },
+  "main": "index.tsx",
+  "private": true
+}
