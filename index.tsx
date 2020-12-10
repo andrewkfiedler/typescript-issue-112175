@@ -164,10 +164,7 @@ function tryToken(text: string, pattern: PatternReturnType) {
   }
 }
 
-function nextToken(
-  text: string,
-  tokens: Array<PatternNamesType | "END">
-): TokenType {
+function nextToken(text: string, tokens: Array<PatternNamesType | "END">) {
   let i,
     token,
     len = tokens.length;
@@ -179,7 +176,7 @@ function nextToken(
       const match = matches[0];
       const remainder = text.substr(match.length).replace(/^\s*/, "");
       return {
-        type: token as TokenType["type"],
+        type: token,
         text: match,
         remainder,
       };
